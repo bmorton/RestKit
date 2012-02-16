@@ -26,6 +26,12 @@
 		2080057E14ED82A30052EB8C /* RKManagedObjectSyncQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2080057A14ED82A30052EB8C /* RKManagedObjectSyncQueue.m */; };
 		2080057F14ED82A30052EB8C /* RKManagedObjectSyncQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2080057A14ED82A30052EB8C /* RKManagedObjectSyncQueue.m */; };
 		2080058014ED82A30052EB8C /* RKManagedObjectSyncQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2080057A14ED82A30052EB8C /* RKManagedObjectSyncQueue.m */; };
+		2080058414ED8C240052EB8C /* RKSyncManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2080058214ED8C240052EB8C /* RKSyncManager.h */; };
+		2080058514ED8C240052EB8C /* RKSyncManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2080058214ED8C240052EB8C /* RKSyncManager.h */; };
+		2080058614ED8C240052EB8C /* RKSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2080058314ED8C240052EB8C /* RKSyncManager.m */; };
+		2080058714ED8C240052EB8C /* RKSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2080058314ED8C240052EB8C /* RKSyncManager.m */; };
+		2080058814ED8C240052EB8C /* RKSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2080058314ED8C240052EB8C /* RKSyncManager.m */; };
+		2080058914ED8C240052EB8C /* RKSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2080058314ED8C240052EB8C /* RKSyncManager.m */; };
 		250CA67D147D8E8B0047D347 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250CA67B147D8E800047D347 /* OCHamcrest.framework */; };
 		250CA67E147D8E8F0047D347 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250CA67C147D8E800047D347 /* OCHamcrestIOS.framework */; };
 		250CA680147D8F050047D347 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 250CA67B147D8E800047D347 /* OCHamcrest.framework */; };
@@ -731,6 +737,8 @@
 		25055B8E14EEF40000B9C4DD /* RKMappingTestExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKMappingTestExpectation.m; path = Testing/RKMappingTestExpectation.m; sourceTree = "<group>"; };
 		2080057914ED82A30052EB8C /* RKManagedObjectSyncQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKManagedObjectSyncQueue.h; sourceTree = "<group>"; };
 		2080057A14ED82A30052EB8C /* RKManagedObjectSyncQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKManagedObjectSyncQueue.m; sourceTree = "<group>"; };
+		2080058214ED8C240052EB8C /* RKSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSyncManager.h; sourceTree = "<group>"; };
+		2080058314ED8C240052EB8C /* RKSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKSyncManager.m; sourceTree = "<group>"; };
 		250CA67B147D8E800047D347 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrest.framework; sourceTree = "<group>"; };
 		250CA67C147D8E800047D347 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		250DF22814C5190E0001DEFA /* RKOrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKOrderedDictionary.h; sourceTree = "<group>"; };
@@ -1316,6 +1324,8 @@
 				25160D57145650490060A5C5 /* RKObjectPropertyInspector+CoreData.m */,
 				2080057914ED82A30052EB8C /* RKManagedObjectSyncQueue.h */,
 				2080057A14ED82A30052EB8C /* RKManagedObjectSyncQueue.m */,
+				2080058214ED8C240052EB8C /* RKSyncManager.h */,
+				2080058314ED8C240052EB8C /* RKSyncManager.m */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -2174,6 +2184,7 @@
 				25EC1A4714F7394100C3CF3F /* RKObjectMappingProviderContextEntry.h in Headers */,
 				25EC1A6314F7402A00C3CF3F /* RKManagedObjectMappingCache.h in Headers */,
 				2080057B14ED82A30052EB8C /* RKManagedObjectSyncQueue.h in Headers */,
+				2080058414ED8C240052EB8C /* RKSyncManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2290,6 +2301,7 @@
 				25EC1A4814F7394200C3CF3F /* RKObjectMappingProviderContextEntry.h in Headers */,
 				25EC1A6514F7402A00C3CF3F /* RKManagedObjectMappingCache.h in Headers */,
 				2080057C14ED82A30052EB8C /* RKManagedObjectSyncQueue.h in Headers */,
+				2080058514ED8C240052EB8C /* RKSyncManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2646,6 +2658,7 @@
 				25EC1A4314F72D0D00C3CF3F /* RKObjectMappingProvider+CoreData.m in Sources */,
 				25EC1A4514F7393D00C3CF3F /* RKObjectMappingProviderContextEntry.m in Sources */,
 				2080057D14ED82A30052EB8C /* RKManagedObjectSyncQueue.m in Sources */,
+				2080058614ED8C240052EB8C /* RKSyncManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2727,6 +2740,7 @@
 				252EFB0D14D98F76004863C8 /* RKMutableBlockDictionaryTest.m in Sources */,
 				25EC1A4A14F73CA200C3CF3F /* RKInMemoryEntityCacheTest.m in Sources */,
 				2080057E14ED82A30052EB8C /* RKManagedObjectSyncQueue.m in Sources */,
+				2080058714ED8C240052EB8C /* RKSyncManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2819,6 +2833,7 @@
 				25EC1A4014F72B3300C3CF3F /* RKInMemoryMappingCache.m in Sources */,
 				25EC1A4614F7393E00C3CF3F /* RKObjectMappingProviderContextEntry.m in Sources */,
 				2080057F14ED82A30052EB8C /* RKManagedObjectSyncQueue.m in Sources */,
+				2080058814ED8C240052EB8C /* RKSyncManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2900,6 +2915,7 @@
 				252EFB0E14D98F76004863C8 /* RKMutableBlockDictionaryTest.m in Sources */,
 				25EC1A4B14F73CA200C3CF3F /* RKInMemoryEntityCacheTest.m in Sources */,
 				2080058014ED82A30052EB8C /* RKManagedObjectSyncQueue.m in Sources */,
+				2080058914ED8C240052EB8C /* RKSyncManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

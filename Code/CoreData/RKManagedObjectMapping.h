@@ -20,7 +20,6 @@
 
 #import <CoreData/CoreData.h>
 #import "RKObjectMapping.h"
-//#import "RKManagedObjectStore.h"
 
 @class RKManagedObjectStore;
 
@@ -28,6 +27,13 @@
  An RKManagedObjectMapping defines an object mapping with a Core Data destination
  entity.
  */
+typedef enum {
+    RKSyncModeNone,
+    RKSyncModeInterval,
+    RKSyncModeTransparent,
+    RKSyncModeManual
+} RKSyncMode;
+
 @interface RKManagedObjectMapping : RKObjectMapping {
     NSEntityDescription *_entity;
     NSString *_primaryKeyAttribute;
@@ -72,6 +78,11 @@
  The RKManagedObjectStore containing the Core Data entity being mapped
  */
 @property (nonatomic, readonly) RKManagedObjectStore *objectStore;
+
+/**
+ The RKSyncMode specifying the way in which objects should be synced, if at all.
+ */
+@property (nonatomic, assign) RKSyncMode syncMode;
 
 /**
  Instructs RestKit to automatically connect a relationship of the object being mapped by looking up 
