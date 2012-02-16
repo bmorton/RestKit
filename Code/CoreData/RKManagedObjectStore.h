@@ -23,6 +23,7 @@
 #import "RKManagedObjectMappingCache.h"
 
 @class RKManagedObjectStore;
+
 /**
  * Notifications
  */
